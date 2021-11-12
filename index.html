@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="border: 2%">
+      <p class="lunch-menu" id="lunch">Lunch Menu</p>
+      <select id="list-menu" onchange="getLunchMenu()">
+        <option value="Rajma Chawal">Rajma Chawal</option>
+        <option value="Kadhi Chawal">Kadhi Chawal</option>
+        <option value="Paratha">Paratha</option>
+        <option value="Puri Sabji">Puri Sabji</option>
+      </select>
+    </div>
+    <br />
+    <p>Dinner Menu</p>
+    <select name="" id="dinner" onchange="getDinnerMenu()">
+      Dinner Menu
+      <option value="Roti Sabji">Roti Sabji</option>
+      <option value="Kadhai Paneer">Kadhai Paneer</option>
+      <option value="chap">Chap</option>
+    </select>
+    <p>Gift Items</p>
+    <select name="" id="gift">
+      Gift Item
+    </select>
+
+    <script>
+      function getLunchMenu() {
+        let selectMenu = document.getElementById("list-menu").value;
+        document.write(selectMenu);
+        console.log(selectMenu);
+      }
+
+      function getDinnerMenu() {
+        let selectedDinnerMenu = document.getElementById("dinner").value;
+        document.write(selectedDinnerMenu);
+        console.log(selectedDinnerMenu);
+      }
+    </script>
+  </body>
+</html>
